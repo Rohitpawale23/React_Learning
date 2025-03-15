@@ -20,7 +20,7 @@ function App() {
 <ol>
   <li>Function name's first letter should be capital</li>
   <li>Components file must have .jsx extension</li>
-  <li>Components name's first letter should be capital(Optional) </li>
+  <li>Components name's first letter should be capital(Optional)</li>
 </ol>
 </div>
 
