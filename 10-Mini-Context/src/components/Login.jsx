@@ -12,15 +12,17 @@ function Login() {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [userage, setuserAge] = useState('')
 
     // to fetch the values
     // here we are fetching the value of user from userContext
 
     const {setUser} = useContext(UserContext)
+    // const {setAge} = useContext(UserContext)
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        setUser({username, password})
+        setUser({username, password, userage})
     }
   return (
     <div style={{backgroundColor: "lightblue",
@@ -45,6 +47,12 @@ function Login() {
         value={password}
         onChange={(e)=> setPassword(e.target.value)}
         type="text" placeholder='password'/>
+
+        <input type="text"
+        value={userage}
+        placeholder='Enter your Age'
+        onChange={(e)=> setuserAge(e.target.value)}
+        />
         <button onClick={handleSubmit}>Subimt</button>
     </div>
   )

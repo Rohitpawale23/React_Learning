@@ -8,7 +8,9 @@ import { useState } from 'react'
 const UserContextProvider = ({children})=>{
 
     const [user, setUser] = useState('')
+    // const [age, setAge] = useState('')
     return(
+        // <UserContext.Provider value={{user, setUser, age, setAge}}>
         <UserContext.Provider value={{user, setUser}}>
             {children}
         </UserContext.Provider>
